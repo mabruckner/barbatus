@@ -30,7 +30,7 @@ class TicTacToe:
         num = 0
         for dx in range(2 if pos[0] == 0 else 1):
             for dy in range(2 if pos[1] == 0 else 1):
-                if dx !=0 and dy!=0:
+                if dx !=0 or dy!=0:
                     num += 1
                     for n in range(3):
                         if self.board[pos[0]+n*dx][pos[1]+n*dy] != player:
