@@ -26,6 +26,6 @@ $(function(){
         console.log($(thing.target).attr("x"));
         var move=JSON.stringify({"x":parseInt($sel.attr("x")),"y":parseInt($sel.attr("y"))});
         console.log(move);
-        $.get("/rest/asdf",{"player":"Bob","move":move});
+        $.get("/rest/asdf",{"player":$sel.val(),"move":move});
     });
 });
