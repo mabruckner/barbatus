@@ -1,6 +1,6 @@
 import tornado.ioloop
 import tornado.web
-import tictactoe as t3
+import TicTacToe as t3
 import json
 game = t3.TicTacToe()
 for player in ["Bob","Bill","Jeb"]:
